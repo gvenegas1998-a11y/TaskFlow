@@ -1,10 +1,10 @@
-# ⚡ TaskFlow — Aplicación de Gestión de Tareas
+# TaskFlow — Aplicación de Gestión de Tareas
 
-TaskFlow es una aplicación web interactiva desarrollada con **JavaScript Vanilla (ES6+)**, estructurada bajo el paradigma de **Programación Orientada a Objetos (POO)** y **arquitectura modular**. Permite gestionar tareas diarias, realizar búsquedas reactivas en tiempo real, monitorear tiempos límite mediante cuentas regresivas dinámicas y sincronizar datos con almacenamiento local y APIs remotas.
+TaskFlow es una aplicación web interactiva desarrollada con **JavaScript (ES6+)**, estructurada bajo el paradigma de **Programación Orientada a Objetos (POO)** y **arquitectura modular**. Permite gestionar tareas diarias, realizar búsquedas reactivas en tiempo real, monitorear tiempos límite mediante cuentas regresivas dinámicas y sincronizar datos con almacenamiento local y APIs remotas.
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 * **Gestión de Tareas (CRUD):** Creación, listado, marcado de estado (completada/pendiente) y eliminación de tareas.
 * **Búsqueda en Tiempo Real:** Filtrado interactivo mediante el evento `input`/`keyup` sin recargar la página.
