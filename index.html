@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow — Gestión de Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="app-card">
+        <!-- Banner de Notificaciones Asíncronas -->
+        <div id="notificacion" class="notificacion oculta"></div>
+
+        <!-- Encabezado -->
+        <header class="app-header">
+            <div class="logo">
+                <h1>TaskFlow</h1>
+            </div>
+            <p>Gestión de Tareas más fácil y rápida</p>
+        </header>
+
+        <!-- Formulario para Agregar Tareas -->
+        <section class="form-section">
+            <form id="task-form">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="task-input" 
+                        placeholder="Escribe la descripción de la tarea..." 
+                        required 
+                        autocomplete="off"
+                    >
+                </div>
+                <div class="form-row">
+                    <div class="date-group">
+                        <label for="task-deadline">Fecha límite:</label>
+                        <input 
+                            type="datetime-local" 
+                            id="task-deadline"
+                            title="Fecha y hora límite (Opcional)"
+                        >
+                    </div>
+                    <button type="submit" id="btn-agregar" class="btn btn-primary">
+                        + Agregar Tarea
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Barra de Búsqueda Interactiva (keyup / input) -->
+        <section class="search-section">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Buscar tareas en tiempo real..."
+                >
+            </div>
+        </section>
+
+        <!-- Lista de Tareas -->
+        <section class="tasks-section">
+            <div class="tasks-header">
+                <h2>Mis Tareas</h2>
+                <span id="contador-tareas" class="badge">0 pendientes</span>
+            </div>
+            <ul id="task-list" class="task-list">
+            </ul>
+        </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
